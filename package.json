@@ -1,0 +1,21 @@
+{
+  "name": "the-movie-aisle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bcharlotin1/the-movie-aisle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Bcharlotin1/the-movie-aisle/issues"
+  },
+  "homepage": "https://github.com/Bcharlotin1/the-movie-aisle#readme"
+}
