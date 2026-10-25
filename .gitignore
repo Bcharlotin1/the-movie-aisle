@@ -1,4 +1,22 @@
-node_modules/
-.claude/
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+
+# misc
 .DS_Store
-.env
+*.pem
+
+# debug
+npm-debug.log*
+
+# env files
+.env*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# claude
+.claude/

@@ -1,21 +1,26 @@
 {
   "name": "the-movie-aisle",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next build && next start",
+    "eslint": "eslint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Bcharlotin1/the-movie-aisle.git"
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/Bcharlotin1/the-movie-aisle/issues"
-  },
-  "homepage": "https://github.com/Bcharlotin1/the-movie-aisle#readme"
+  "devDependencies": {
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
 }
