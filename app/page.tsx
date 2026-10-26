@@ -17,8 +17,8 @@ const HomePage: React.FC = async () => {
       </header>
 
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-        {movies.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
+        {movies.map((movie, index) => (
+          <MovieCard key={movie.id} movie={movie} eager={index < 5} />
         ))}
       </div>
     </main>
