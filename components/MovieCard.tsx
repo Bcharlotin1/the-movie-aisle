@@ -2,14 +2,16 @@
 
 import type React from "react"
 import { useState } from "react"
+
 import Image from "next/image"
+
 import type { Movie } from "@/lib/types"
 
 const MovieCard: React.FC<{ movie: Movie }> = ({ movie }) => {
   const [isFlipped, setIsFlipped] = useState(false)
 
   return (
-    <article className="relative perspective-distant">
+    <article className="font-card relative perspective-distant">
       <div
         className={`relative transform-3d transition-transform duration-500 ${isFlipped ? "rotate-y-180" : ""}`}
       >
@@ -24,12 +26,16 @@ const MovieCard: React.FC<{ movie: Movie }> = ({ movie }) => {
           ) : (
             <div>No poster</div>
           )}
-          <h2>{movie.title}</h2>
-          <p>{movie.vote_average.toFixed(1)}</p>
-          <p>{movie.release_date}</p>
+          <div className="text-center">
+            <h2 className="font-semibold">{movie.title}</h2>
+            <p className="font-light">{movie.vote_average.toFixed(1)}</p>
+            <p className="font-light">{movie.release_date}</p>
+          </div>
         </div>
         <div className="absolute inset-0 overflow-hidden p-4 rotate-y-180 backface-hidden">
-          <p>{movie.overview || "No description available."}</p>
+          <p className="font-light">
+            {movie.overview || "No description available."}
+          </p>
         </div>
       </div>
 

@@ -19,13 +19,13 @@ const ErrorPage: React.FC<{ retry: () => void }> = ({ retry }) => {
 
   if (hasRetried) {
     return (
-      <div>
+      <div className="page-message">
         <h2>The aisle is closed right now</h2>
         <p>We couldn&apos;t load the movies. Please try again later</p>
       </div>
     )
   }
-  return <p>Something went wrong. Trying again...</p>
+  return <p className="page-message">Something went wrong. Trying again...</p>
 }
 
 export default ErrorPage
