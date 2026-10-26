@@ -1,6 +1,7 @@
+import type React from "react"
 import { getMovies } from "@/lib/movies"
 
-const Home = async () => {
+const Home: React.FC = async () => {
   const movies = await getMovies()
 
   return (
