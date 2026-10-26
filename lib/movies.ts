@@ -1,7 +1,7 @@
 import "server-only"
-import type { DiscoverMovieResponse, Movie } from "./types"
+import type { DiscoverMovieResponse } from "./types"
 
-export const getMovies = async (): Promise<Movie[]> => {
+export const getMovies = async () => {
   "use cache"
 
   const apiKey = process.env.TMDB_API_KEY
