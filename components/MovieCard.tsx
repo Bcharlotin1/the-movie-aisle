@@ -20,7 +20,9 @@ const MovieCard: React.FC<{ movie: Movie; eager: boolean }> = ({
             loading={eager ? "eager" : "lazy"}
           />
         ) : (
-          <div>No poster</div>
+          <div className="flex aspect-2/3 items-center justify-center bg-blue-900 text-yellow-400">
+            No poster
+          </div>
         )}
         <div className="text-center">
           <h2 className="font-semibold">{movie.title}</h2>
