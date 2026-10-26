@@ -10,7 +10,7 @@ const HomePage: React.FC = async () => {
   return (
     <main>
       <h1>The Movie Aisle</h1>
-      <div>
+      <div className="grid grid-cols-4 gap-4">
         {movies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
         ))}
